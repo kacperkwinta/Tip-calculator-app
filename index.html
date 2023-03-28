@@ -1,44 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/style.css" />
+		<title>Tip calculator app</title>
+	</head>
+	<body>
+		<header>
+			<h1>
+				<span>Spli</span>
+				<span>tter</span>
+			</h1>
+		</header>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Tip calculator app</title>
+		<main>
+			<div class="box-calculations">
+				<!-- BILL -->
+				<label for="bill">Bill</label> <br />
+				<div class="input-wrapper">
+					<input
+						type="number"
+						name=""
+						class="input mb-m"
+						id="bill"
+						placeholder="0"
+					/>
+				</div>
+				<!-- SELECT TIP -->
+				<label for="number-people ">Select Tip %</label>
+				<div class="btn-wrapper">
+					<button class="btn">5%</button>
+					<button class="btn">10%</button>
+					<button class="btn btn--clicked">15%</button>
+					<button class="btn">25%</button>
+					<button class="btn">50%</button>
+					<input type="number" name="" placeholder="Custom" />
+				</div>
+				<!-- NUMBER OF PEOPLE -->
+				<div class="input-wrapper">
+					<label for="number-people">Number of People</label> <br />
+					<input
+						type="number"
+						name=""
+						class="input"
+						id="number-people"
+						placeholder="0"
+					/>
+				</div>
+			</div>
+			<div class="box-results">asdassdad</div>
+		</main>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+		<!-- <div class="attribution">
+			Challenge by
+			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+				>Frontend Mentor</a
+			>. Coded by
+			<a href="https://github.com/kacperkwinta" target="_blank">Kacper Kwinta</a
+			>.
+		</div> -->
 
-  Bill
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+		<script src="js/script.js"></script>
+	</body>
 </html>
