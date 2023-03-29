@@ -5,7 +5,7 @@ $color-neutral-1: hsl(183, 100%, 15%);
 $color-neutral-2: hsl(186, 14%, 43%);
 $color-neutral-3: hsl(184, 14%, 56%);
 $color-neutral-4: hsl(185, 41%, 84%);
-$color-neutral-5: hsl(189, 41%, 97%);
+$color-neutral-5: hsl(180, 50%, 98%);
 $color-neutral-6: hsl(0, 0%, 100%);
 
 *,
@@ -211,6 +211,33 @@ input::-ms-reveal {
 	flex-basis: 50%;
 	border-radius: 1.2rem;
 	padding: 3.2rem;
+
+	.wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		span {
+			display: flex;
+			flex-direction: column;
+			gap: 0.5rem;
+		}
+	}
+
+	.tip {
+		color: $color-neutral-5;
+		font-size: 2rem;
+	}
+
+	.person {
+		color: $color-neutral-3;
+		font-size: 1.4rem;
+	}
+
+	.tip-amount {
+		color: $color-primary-1;
+		font-size: 4.4rem;
+	}
 }
 
 ////////////////////////////////
