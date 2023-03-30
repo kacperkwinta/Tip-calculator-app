@@ -50,6 +50,7 @@ header {
 main {
 	max-width: 90rem;
 	margin: 0 auto;
+	margin-bottom: 3.2rem;
 	background-color: $color-neutral-6;
 	padding: 3.2rem;
 	border-radius: 2.4rem;
@@ -212,10 +213,15 @@ input::-ms-reveal {
 	border-radius: 1.2rem;
 	padding: 3.2rem;
 
+	display: flex;
+	flex-direction: column;
+	gap: 3.2rem;
+
 	.wrapper {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		gap: 1.2rem;
 
 		span {
 			display: flex;
@@ -238,12 +244,31 @@ input::-ms-reveal {
 		color: $color-primary-1;
 		font-size: 4.4rem;
 	}
+
+	.btn--reset {
+		margin-top: auto;
+		transition: all 0.2s ease;
+	}
+
+	.btn--reset-inactive {
+		background-color: #0e686c;
+		color: $color-neutral-1;
+	}
+
+	.btn--reset-active {
+		background-color: $color-primary-1;
+		color: $color-neutral-6;
+	}
 }
 
 ////////////////////////////////
 /// BELOW 600 PX
 ////////////////////////////////
 @media only screen and (max-width: 37.5em) {
+	html {
+		font-size: 50%;
+	}
+
 	header {
 		margin: 4.8rem auto;
 	}
@@ -259,5 +284,26 @@ input::-ms-reveal {
 		gap: 1.2rem;
 		margin-top: 1rem;
 		margin-bottom: 3.2rem;
+	}
+}
+
+//////////////////////////////
+/// BELOW 375 PX
+//////////////////////////////
+@media only screen and (max-width: 23.4375em) {
+	html {
+		font-size: 47.5%;
+	}
+
+	main {
+		margin: 0;
+		border-bottom-right-radius: 0;
+		border-bottom-left-radius: 0;
+	}
+
+	.box-results {
+		.tip-amount {
+			font-size: 3.2rem;
+		}
 	}
 }
