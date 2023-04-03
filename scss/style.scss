@@ -248,6 +248,16 @@ input::-ms-reveal {
 	.btn--reset {
 		margin-top: auto;
 		transition: all 0.2s ease;
+
+		font-family: inherit;
+		background-color: $color-neutral-1;
+		border-radius: 0.5rem;
+		border: none;
+		padding: 1rem 2.4rem;
+		color: $color-neutral-5;
+		font-size: inherit;
+		transition: all 0.2s ease;
+		cursor: pointer;
 	}
 
 	.btn--reset-inactive {
